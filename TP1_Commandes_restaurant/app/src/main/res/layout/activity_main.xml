@@ -1,18 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageRestau"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/logoresto" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/txtTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Composition menu" />
+
+    <TextView
+        android:id="@+id/txtEntree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entrée" />
+
+    <Spinner
+        android:id="@+id/spEntree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtPlat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Plat" />
+
+    <Spinner
+        android:id="@+id/spPlat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtDessert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dessert" />
+
+    <Spinner
+        android:id="@+id/spDessert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtQte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantité" />
+
+    <Spinner
+        android:id="@+id/spQte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editQte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Quantité" />
+
+    <Button
+        android:id="@+id/bAjouter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AJOUTER" />
+
+    <TextView
+        android:id="@+id/txtRecapitulatif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Récapitulatif" />
+
+    <EditText
+        android:id="@+id/editRemarques"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Remarques" />
+
+    <Button
+        android:id="@+id/bEnregistrer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENREGISTRER" />
+
+    <Button
+        android:id="@+id/bAnnuler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ANNULER" />
+
+
+</LinearLayout>
